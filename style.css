@@ -1,0 +1,13 @@
+.splide__arrow--prev:hover , .splide__arrow--next:hover {
+    background: #C2DBD9;
+}
+
+.splide__arrow--prev:active , .splide__arrow--next:active {
+    background: #C2DBD9;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}

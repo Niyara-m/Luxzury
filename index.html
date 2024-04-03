@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luxzury</title>
+	<link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<style type="text/css">
+		.font-Inter {
+		  font-family: "Inter", sans-serif;
+		}
+	</style>
+</head>
+<body class="max-w-[1440px] mx-auto">
+	<header id="nav" class="bg-[#f9f9f9]">
+		<nav class="container mx-auto max-w-[1170px] font-Inter">
+			<div class="items-baseline h-[48px] pt-[50px] px-6 xl:px-0 lg:flex hidden justify-between">
+				<div class="text-[32px] text-[#0A8077] flex-grow font-extrabold">Luxzury</div>
+				<div class="flex items-baseline gap-[42px]">
+					<ul class="flex gap-[60px]">
+						<li>
+							<a href="#home" class="flex flex-col items-center text-[#0A8077] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">
+								Home
+								<span class="h-[4px] w-[24px] bg-[#0A8077] rounded-full mt-[8px]"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#services" class="group flex flex-col items-center text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">
+								Services
+								<span class="h-[4px] w-[24px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#facilities" class="group flex flex-col items-center text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">
+								Facilities
+								<span class="h-[4px] w-[24px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#feedback" class="group flex flex-col items-center text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">
+								Info
+								<span class="h-[4px] w-[24px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+							</a>
+						</li>
+						
+					</ul>
+					<button class="flex flex-col items-center justify-center text-[#0A8077] text-[20px] font-bold border border-[#0A8077] w-[154px] h-[46px] rounded-[8px] transition duration-700 ease-in-out hover:text-white hover:bg-[#0A8077]">
+						Book Now
+					</button>
+				</div>
+			</div>
+			
+			<div id="navMobile" class="block lg:hidden">
+				<div class="flex items-center px-6 xl:px-0 h-16">
+					<div class="text-[32px] text-[#0A8077] flex-grow font-extrabold">Luxzury</div>
+					
+					<div class="-mr-2 flex">
+						<button class="inline-flex items-center justify-center p-2 text-[#404040] hover:text-[#0A8077] focus:outline-none ">
+							<svg id="openIcon" onclick="openMobileMenu()" class="block h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+							</svg>
+
+							<svg id="closeIcon" onclick="closeMobileMenu()" class="hidden h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					
+				</div>
+				<div id="mobileMenu" class="hidden bg-white w-full">
+					<ul class="py-6">
+						<li>
+							<a href="#home" onclick="closeMobileMenu()" class="block pl-8 py-2 text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">Home</a>
+						</li>
+						<li>
+							<a href="#services" onclick="closeMobileMenu()" class="block pl-8 py-2 text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">Services</a>
+						</li>
+						<li>
+							<a href="#facilities" onclick="closeMobileMenu()" class="block pl-8 py-2 text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">Facilities</a>
+						</li>
+						<li>
+							<a href="#feedback" onclick="closeMobileMenu()" class="block pl-8 py-2 text-[#404040] text-[20px] font-bold transition duration-700 ease-in-out hover:text-[#0A8077]">Info</a>
+						</li>
+					</ul>
+					<button class="ml-8 mb-8 flex flex-col items-center justify-center text-[#0A8077] text-[20px] font-bold border border-[#0A8077] w-[154px] h-[46px] rounded-[8px] transition duration-700 ease-in-out hover:text-white hover:bg-[#0A8077]">
+						Book Now
+					</button>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main id="home" class="bg-[#f9f9f9]">
+		<div class="container md:ms-[136px] max-w-[1304px] font-Inter pt-[5px] md:pt-[90px]">
+			<div class="relative mx-4 md:mx-0">
+				<div class="md:flex items-start relative">
+					<div class="mt-[48px]">
+						<span class="text-[18px] text-[#0A8077] font-semibold py-[9px] px-[8px] bg-white rounded-[6px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]">#1  Best Hotel In-Town</span>
+						<h1 class="pt-[39px] md:text-[60px] text-[30px] text-[#404040] font-extrabold w-full md:w-[647px]">The Most <span class="text-[#0A8077]">Luxurious Hotel</span> In-Town!</h1>
+						<p class="pt-[39px] text-[22px] text-[#404040] w-full md:w-[565px]">
+							Luxzury`s the hotel based in Wakanda, 59th street East Waka. This hotel has been around since 1890 and become one of the best hotels in town.
+						</p>
+					</div>
+					<div class="md:w-[661px] md:h-[707px] w-full h-full flex-shrink-0 md:pt-0 pt-[20px]">
+						<img src="hotel.png" class="w-full h-full object-center object-cover rounded-l-[10px]">
+					</div>
+				</div>
+				<div class="absolute bottom-0 md:mb-[89px] md:inline-flex items-center bg-white rounded-[10px] py-[16px]">
+					<div class="w-[217px] px-[27px] py-[10px] md:py-0 border-b md:border-b-0 md:border-r">
+						<span class="block text-[18px] text-[#000000] opacity-55 font-bold">Person</span>
+						<span class="block text-[20px] text-[#404040] font-bold">2 Adult - 3 Child</span>
+					</div>
+					<div class="w-[217px] px-[27px] py-[10px] md:py-0 border-b md:border-b-0 md:border-r">
+						<span class="block text-[18px] text-[#000000] opacity-55 font-bold">Check-in</span>
+						<span class="block text-[20px] text-[#404040] font-bold">16 Jun 9PM</span>
+					</div>
+					<div class="w-[217px] px-[27px] py-[10px] md:py-0 border-b md:border-b-0 md:border-r">
+						<span class="block text-[18px] text-[#000000] opacity-55 font-bold">Check-out</span>
+						<span class="block text-[20px] text-[#404040] font-bold">18 Jun 9AM</span>
+					</div>
+					<div class="pt-4 md:pt-0 md:pr-[17px] text-center">
+						<button class="text-[20px] text-[#ffffff] font-bold bg-[#0A8077] drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)] py-[23px] px-[53px] rounded-[8px]">
+							CHECK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<section id="services" class="bg-[#f9f9f9]">
+		<div class="md:py-[97px] py-[47px] container mx-auto max-w-[1117px] font-Inter px-4 md:px-0">
+			<div class="flex items-center justify-center">
+				<h2 class="text-[30px] md:text-[52px] text-[#000000] font-extrabold w-full md:w-[778px] text-center">
+					We Provide The Best Services for Our Guests
+				</h2>
+			</div>
+			<div class="pt-[25px] md:pt-[54px] grid grid-cols-1 md:grid-cols-2 gap-[25px] md:gap-[53px]">
+				<div class="relative">
+					<div class="z-30 relative md:py-[28px] md:px-[33px] py-[14px] px-[15px] bg-white rounded-[10px]">
+						<span class="flex items-center justify-center md:w-[70px] md:h-[67px] w-[40px] h-[39px] rounded-[10px] bg-[#0A8077] text-white text-bold md:text-[29px] text-[19px]">1</span>
+						<h3 class="text-[#000000] text-bold text-[20px] md:text-[36px] pt-[15px] md:pt-[30px] md:pb-[12px] pb-[6px]">Hygienic Room</h3>
+						<p class="text-[#404040] text-semibold text-[13px] md:text-[20px] w-full md:w-[362px]">We do cleaning every time for the convenience of hotel guests, and we have adequate cleaning facilities</p>
+					</div>
+
+					<div class="absolute z-10 bottom-0 w-[150px] md:w-[329px] h-[83px] mb-6 md:mb-10 ml-6 md:ml-14 bg-[#4F4F4F] blur-[150px]"></div>
+				</div>
+				<div class="relative order-3 md:order-2">
+					<div class="z-30 relative md:py-[28px] md:px-[33px] py-[14px] px-[15px] bg-white rounded-[10px]">
+						<span class="flex items-center justify-center md:w-[70px] md:h-[67px] w-[40px] h-[39px] rounded-[10px] bg-[#0A8077] text-white text-bold md:text-[29px] text-[19px]">3</span>
+						<h3 class="text-[#000000] text-bold text-[20px] md:text-[36px] pt-[15px] md:pt-[30px] md:pb-[12px] pb-[6px]">High Security</h3>
+						<p class="text-[#404040] text-semibold text-[13px] md:text-[20px] w-full md:w-[362px]">Security sistem at this hotel is very guaranteed and has a recognized security certificate.</p>
+					</div>
+
+					<div class="absolute z-10 bottom-0 w-[150px] md:w-[329px] h-[83px] mb-6 md:mb-10 ml-6 md:ml-14 bg-[#4F4F4F] blur-[150px]"></div>
+				</div>
+				<div class="relative order-2 md:order-3">
+					<div class="z-30 relative md:py-[28px] md:px-[33px] py-[14px] px-[15px] bg-white rounded-[10px]">
+						<span class="flex items-center justify-center md:w-[70px] md:h-[67px] w-[40px] h-[39px] rounded-[10px] bg-[#0A8077] text-white text-bold md:text-[29px] text-[19px]">2</span>
+						<h3 class="text-[#000000] text-bold text-[20px] md:text-[36px] pt-[15px] md:pt-[30px] md:pb-[12px] pb-[6px]">Delicious Food</h3>
+						<p class="text-[#404040] text-semibold text-[13px] md:text-[20px] w-full md:w-[362px]">We strive to provide the best food from the world's selected chefs, as well as hygienic ingredients.</p>
+					</div>
+
+					<div class="absolute z-10 bottom-0 w-[150px] md:w-[329px] h-[83px] mb-6 md:mb-10 ml-6 md:ml-14 bg-[#4F4F4F] blur-[150px]"></div>
+				</div>
+				<div class="relative order-last">
+					<div class="z-30 relative md:py-[28px] md:px-[33px] py-[14px] px-[15px] bg-white rounded-[10px]">
+						<span class="flex items-center justify-center md:w-[70px] md:h-[67px] w-[40px] h-[39px] rounded-[10px] bg-[#0A8077] text-white text-bold md:text-[29px] text-[19px]">4</span>
+						<h3 class="text-[#000000] text-bold text-[20px] md:text-[36px] pt-[15px] md:pt-[30px] md:pb-[12px] pb-[6px]">Quick Service</h3>
+						<p class="text-[#404040] text-semibold text-[13px] md:text-[20px] w-full md:w-[362px]">We have many qualified employees who are ready to serve you whenever you need.</p>
+					</div>
+
+					<div class="absolute z-10 bottom-0 w-[150px] md:w-[329px] h-[83px] mb-6 md:mb-10 ml-6 md:ml-14 bg-[#4F4F4F] blur-[150px]"></div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section id="facilities" class="bg-[#f9f9f9]">
+		<div class="md:py-[97px] py-[47px] font-Inter px-4 md:px-0 container max-w-[1305px] md:ms-[135px]">
+			<div class="md:flex items-start">
+				<div class="w-full md:w-[378px]">
+					<h2 class="pb-[35px] md:pb-[53px] text-[30px] md:text-[52px] text-[#000000] font-bold text-nowrap text-center">
+						Our Facilities
+					</h2>
+					<div>
+						<ul class="flex md:flex-col md:gap-[44px] gap-[16px] overflow-x-scroll example">
+							<li>
+								<a href="#" class="flex flex-col items-start text-[#0A8077] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Bedroom
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-[#0A8077] rounded-full mt-[8px]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Workspace
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Meeting Room
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Restaurant
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Swimming Pool
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Coffee Shop
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									Parking Lot
+									<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="pt-[13px] md:pt-[20px]">
+					<div class="max-w-[927px]">
+						<section id="slider1" class="splide splide-first" aria-label="Splide Basic HTML Example">
+							<div class="flex items-center w-full">
+								<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+								<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+									<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+									</button>
+									<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+										<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="splide__track pt-[36px] pt-[14px] ">
+								<ul class="splide__list">
+									<li class="splide__slide">
+										<div class="flex items-center justify-center">
+											<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+												<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+													<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+												</div>
+												
+												<div class="pt-[7px] md:pt-0">
+													
+													<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+														Tinylux Room
+													</h6>
+													<div>
+														<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+															$2789
+														</span>
+														<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+															per-night
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="flex items-center justify-center">
+											<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+												<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+													<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+												</div>
+												
+												<div class="pt-[7px] md:pt-0">
+													
+													<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+														Tinylux Room
+													</h6>
+													<div>
+														<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+															$2789
+														</span>
+														<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+															per-night
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="splide__slide">
+										<div class="flex items-center justify-center">
+											<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+												<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+													<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+												</div>
+												
+												<div class="pt-[7px] md:pt-0">
+													
+													<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+														Tinylux Room
+													</h6>
+													<div>
+														<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+															$2789
+														</span>
+														<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+															per-night
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="feedback" class="bg-[#f9f9f9]">
+		<div class="md:py-[97px] py-[47px] font-Inter px-4 md:px-0">
+			<div class="relative">
+				<div class="flex items-center justify-center pb-[54px] container mx-auto ">
+					<h2 class="text-[30px] md:text-[52px] text-[#000000] font-bold w-full md:w-[695px] text-center">
+						See What Our Guest Say
+					</h2>
+				</div>
+				<section id="slider2" class="splide relative z-20" aria-label="Splide Basic HTML Example">
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div class="flex items-center justify-center">
+									<div class="max-w-[1117px] md:flex gap-[33px] items-center bg-white p-[26px] rounded-[10px]">
+										<div class="md:w-[400px] md:h-[431px] w-full h-full flex-shrink-0">
+											<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+										</div>
+										
+										<div class="pt-[20px] md:pt-0">
+											<img src="line.png" class="md:w-[33px] md:h-[25px] h-[13px] w-[15px]">
+											<h3 class="md:text-[42px] text-[21px] md:py-[34px] py-[17px]">
+												This place was incredible, and services of the hotel was great. Thanks!
+											</h3>
+											<p class="md:text-[28px] text-[14px] font-medium text-[#404040] pb-[9px]">
+												Leonardo
+											</p>
+											<p class="md:text-[22px] text-[11px] font-medium text-[#404040] opacity-55">
+												Traveller
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="splide__slide">
+								<div class="flex items-center justify-center">
+									<div class="max-w-[1117px] md:flex gap-[33px] items-center bg-white p-[26px] rounded-[10px]">
+										<div class="md:w-[400px] md:h-[431px] w-full h-full flex-shrink-0">
+											<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+										</div>
+										
+										<div class="pt-[20px] md:pt-0">
+											<img src="line.png" class="md:w-[33px] md:h-[25px] h-[13px] w-[15px]">
+											<h3 class="md:text-[42px] text-[21px] md:py-[34px] py-[17px]">
+												This place was incredible, and services of the hotel was great. Thanks!
+											</h3>
+											<p class="md:text-[28px] text-[14px] font-medium text-[#404040] pb-[9px]">
+												Leonardo
+											</p>
+											<p class="md:text-[22px] text-[11px] font-medium text-[#404040] opacity-55">
+												Traveller
+											</p>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="pt-[65px] flex items-center justify-center">
+						<span class="h-[5px] rounded-full w-full md:w-[600px] bg-[#0A8077]"></span>
+						<div class="splide__arrows flex items-center gap-[16px] px-[40px]">
+							<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] rotate-180 text-[#0A8077]">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+							</button>
+							<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+							</button>
+						</div>
+						<span class="h-[5px] rounded-full w-full md:w-[600px] bg-[#0A8077]"></span>
+					</div>
+				</section>
+				<div class="absolute z-10 bottom-0 left-0 right-0 mx-auto w-[150px] md:w-[681px] h-[103px] mb-6 md:mb-[110px] bg-[#4F4F4F] blur-[150px]"></div>
+			</div>
+		</div>
+	</section>
+	<section class="bg-white">
+		<div class="container mx-auto max-w-[860px] font-Inter pt-[59px] pb-[72px] px-4 md:px-0">
+			<h2 class="text-[#0A8077] md:text-[60px] text-[40px] text-center font-extrabold md:px-20">Subscribe to Get Special Offer!</h2>
+			<p class="text-[#404040] md:text-[22px] text-[15px] text-center font-medium pt-[26px] py-[29px] px-16 opacity-55">
+				Don`t miss this oportunity! Subscribe now to get the special offer and awesome newsletter!
+			</p>
+			<div class="w-full md:w-[847px] flex items-center rounded-[10px] bg-white drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)] md:px-[25px] px-[13px]">
+				<input type="text" name="email" class="w-full rounded-[10px] md:py-[35px] py-[17px] md:text-[28px] text-[14px] focus:outline-none" placeholder="Drop your email address">
+				<button class="text-white bg-[#0A8077] md:text-[20px] text-[10px] text-center font-bold md:py-[23px] py-[11px] md:px-[32px] px-[16px] rounded-[8px] drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)]">SUBSCRIBE</button>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-[#0A8077]">
+		<div class="container mx-auto max-w-[1291px] font-Inter px-4 md:px-0">
+			<div class="text-center md:flex items-center justify-between py-[26px]">
+				<div class="md:flex items-center gap-[70px]">
+					<a href="tel:+998930000000" class="block md:inline-block text-white font-extrabold text-[20px]">+998 93 000 00 00</a>
+					<a href="mailto:info@luxzury.com" class="block md:inline-block text-white font-extrabold text-[20px]">info@luxzury.com</a>
+				</div>
+				<a href="https://luxzury.com" class="text-white font-extrabold text-[20px]">www.luxzury.com</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="script.js"></script>
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function() {
+			const firstSlider = new Splide( '#slider1',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const secondSlider = new Splide( '#slider2',{
+				pagination: false
+			} ).mount();
+		} );
+
+	</script>
+	<script  src="./splide-4.1.3/dist/js/splide.min.js"></script>
+</body>
+</html>
