@@ -11,3 +11,6 @@
     -ms-overflow-style: none;  /* IE и Edge */
     scrollbar-width: none;  /* Firefox */
 }
+.blocks .item-block {
+    display: none;
+}

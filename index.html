@@ -117,11 +117,21 @@
 						</div>
 						<div class="w-[217px] px-[27px] py-[10px] md:py-0 border-b md:border-b-0 md:border-r">
 							<span class="block text-[18px] text-[#000000] opacity-55 font-bold">Check-in</span>
-							<span class="block text-[20px] text-[#404040] font-bold">16 Jun 9PM</span>
+							<div class="relative">
+								<input datepicker id="myDatepicker" datepicker-format="dd M yy" type="text" class="block w-full pe-10 block text-[20px] text-[#404040] font-bold focus:outline-none" placeholder="Select date">
+								<div class="absolute inset-y-0 end-0 flex items-center pointer-events-none">
+									<svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+								</div>
+							</div>
 						</div>
 						<div class="w-[217px] px-[27px] py-[10px] md:py-0 border-b md:border-b-0 md:border-r">
 							<span class="block text-[18px] text-[#000000] opacity-55 font-bold">Check-out</span>
-							<span class="block text-[20px] text-[#404040] font-bold">18 Jun 9AM</span>
+							<div class="relative">
+								<input datepicker id="myDatepicker2" datepicker-format="dd M yy" type="text" class="block w-full pe-10 block text-[20px] text-[#404040] font-bold focus:outline-none" placeholder="Select date">
+								<div class="absolute inset-y-0 end-0 flex items-center pointer-events-none">
+									<svg class="w-4 h-4 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
+								</div>
+							</div>
 						</div>
 						<div class="pt-4 md:pt-0 md:pr-[17px] text-center">
 							<button class="text-[20px] text-[#ffffff] font-bold bg-[#0A8077] drop-shadow-[0_15px_30px_rgba(0,0,0,0.25)] py-[23px] px-[53px] rounded-[8px]">
@@ -179,6 +189,8 @@
 				</div>
 			</div>
 		</section>
+		<div>
+
 		<section id="facilities" class="bg-[#f9f9f9]">
 			<div class="md:py-[97px] py-[47px] font-Inter px-4 md:px-0 container max-w-[1305px] md:ms-[135px]">
 				<div class="md:flex items-start">
@@ -189,43 +201,43 @@
 						<div>
 							<ul class="flex md:flex-col md:gap-[44px] gap-[16px] overflow-x-scroll example">
 								<li>
-									<a href="#" class="flex flex-col items-start text-[#0A8077] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#bedroom" class="menu-item flex flex-col items-start text-[#0A8077] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Bedroom
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-[#0A8077] rounded-full mt-[8px]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#workspace" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Workspace
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#meeting" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Meeting Room
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#restaurant" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Restaurant
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#pool" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Swimming Pool
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#coffee" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Coffee Shop
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
 								</li>
 								<li>
-									<a href="#" class="group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
+									<a href="#parking" class="menu-item group flex flex-col items-start text-[#666666] md:text-[32px] text-[16px] font-medium  text-nowrap transition duration-700 ease-in-out hover:text-[#0A8077]">
 										Parking Lot
 										<span class="h-[4px] md:w-[66px] w-[33px] bg-transperent rounded-full mt-[8px] transition duration-700 ease-in-out group-hover:bg-[#0A8077]"></span>
 									</a>
@@ -234,9 +246,561 @@
 							</ul>
 						</div>
 					</div>
-					<div class="pt-[13px] md:pt-[20px]">
-						<div class="max-w-[927px]">
+					<div class="blocks pt-[13px] md:pt-[20px]">
+						<div id="bedroom" class="item-block max-w-[927px]" style="display:block;">
 							<section id="slider1" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="workspace" class="item-block max-w-[927px]">
+							<section id="slider3" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room 2
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="meeting" class="item-block max-w-[927px]">
+							<section id="slider4" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room4
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="restaurant" class="item-block max-w-[927px]">
+							<section id="slider5" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="pool" class="item-block max-w-[927px]">
+							<section id="slider6" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="avatar.png" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="coffee" class="item-block max-w-[927px]">
+							<section id="slider7" class="splide splide-first" aria-label="Splide Basic HTML Example">
+								<div class="flex items-center w-full">
+									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
+									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
+										<button class="splide__arrow--prev w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077] rotate-180">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" /></svg>
+										</button>
+										<button class="splide__arrow--next  w-[47px] h-[46px] bg-white flex items-center justify-center rounded-[10px] text-[#0A8077]">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+										</button>
+									</div>
+								</div>
+
+								<div class="splide__track pt-[36px] pt-[14px] ">
+									<ul class="splide__list">
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="splide__slide">
+											<div class="flex items-center justify-center">
+												<div class="flex flex-col bg-white p-[26px] rounded-[10px]">
+													<div class="md:w-[331px] md:h-[450px] w-full h-full flex-shrink-0">
+														<img src="happy.jpg" class="w-full h-full object-center object-cover rounded-[10px]">
+													</div>
+													
+													<div class="pt-[7px] md:pt-0">
+														
+														<h6 class="md:text-[30px] text-[#000000] text-[21px] md:py-[34px] py-[22px]">
+															Tinylux Room
+														</h6>
+														<div>
+															<span class="md:text-[36px] text-[13px] font-semibold text-[#0A8077]">
+																$2789
+															</span>
+															<span class="md:text-[14px] text-[7px] font-semibold text-[#3E3E3E] opacity-55">
+																per-night
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</div>
+						<div id="parking" class="item-block max-w-[927px]">
+							<section id="slider8" class="splide splide-first" aria-label="Splide Basic HTML Example">
 								<div class="flex items-center w-full">
 									<span class="flex-shrink-0 h-[5px] rounded-full flex-grow md:w-[649px] bg-[#0A8077] md:mx-[33px] mx-[10px]"></span>
 									<div class="splide__arrows flex items-center gap-[16px] md:mr-10">
@@ -331,6 +895,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section id="feedback" class="bg-[#f9f9f9]">
 			<div class="md:py-[97px] py-[47px] font-Inter px-4 md:px-0">
 				<div class="relative">
@@ -450,6 +1015,97 @@
 				}
 			} ).mount();
 
+			const thirdSlider = new Splide( '#slider3',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const fourSlider = new Splide( '#slider4',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const fiveSlider = new Splide( '#slider5',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const sixSlider = new Splide( '#slider6',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const sevenSlider = new Splide( '#slider7',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+			const eightlider = new Splide( '#slider8',{
+				perPage: 2,
+				gap: '0px',
+				pagination: false,
+				type   : 'loop',
+				padding: { right: 110 },
+				waitForTransition: true,
+				breakpoints: {
+					1024: {
+						perPage: 1,
+						padding: { right: 0 },
+					}
+				}
+			} ).mount();
+
+
 			const secondSlider = new Splide( '#slider2',{
 				pagination: false
 			} ).mount();
@@ -457,5 +1113,6 @@
 
 	</script>
 	<script  src="./splide-4.1.3/dist/js/splide.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
 </body>
 </html>
