@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
                     block.style.display = 'none';
                 }
             });
+
+            menuItems.forEach(function(item) {
+                item.classList.remove('text-[#0A8077]');
+                item.classList.add('text-[#666666]');
+            });       
+
+            menuItem.classList.remove('text-[#666666]');
+            menuItem.classList.add('text-[#0A8077]');     
         });
     });
 });
@@ -43,4 +51,7 @@ function formatDate() {
 
 document.querySelector('#myDatepicker').value = formatDate();
 document.querySelector('#myDatepicker2').value = formatDate();
+
+
+
 
