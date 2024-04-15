@@ -36,9 +36,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
             menuItem.classList.remove('text-[#666666]');
             menuItem.classList.add('text-[#0A8077]');     
+
+             // Удаление класса активности для всех span элементов
+             const allSpans = document.querySelectorAll('.menu-item span');
+             allSpans.forEach(function(span) {
+                 span.classList.remove('bg-[#0A8077]');
+             });
+
+              // Добавление класса активности для span элемента текущего пункта меню
+            const currentSpan = this.querySelector('span');
+            currentSpan.classList.add('bg-[#0A8077]');
         });
     });
 });
+
 
 function formatDate() {
   let date = new Date();
